@@ -1,0 +1,10 @@
+[Unit]
+description=redis-auth-server
+After=network.target
+
+[Service]
+ExecStart=/opt/redis-auth-server/bin/redis-auth-server run
+User=redis-auth-server
+
+[Install]
+WantedBy=multi-user.target

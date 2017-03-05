@@ -1,0 +1,45 @@
+local config = {
+    -- set a path to nginx
+    -- this is required
+    -- nginx = "/usr/sbin/nginx";
+
+    -- set the log level
+    -- default: error
+    -- valid values: debug, info, notice, warn, error, crit, alert, emerg
+    -- log_level = "error";
+
+    -- set a custom working directory
+    -- optional, defaults to $HOME/.redis-auth-server
+    -- work_dir = "/home/user/something";
+    
+    -- set listen interface+port or unix path
+    -- optional, defaults to 127.0.0.1:8080
+    -- see http://nginx.org/en/docs/http/ngx_http_core_module.html#listen
+    -- listen = "127.0.0.1:8080";
+
+    -- set the number of worker processes
+    -- optional, defaults to 1
+    -- worker_processes = 1;
+
+    -- set the cache expire time, in seconds
+    -- defaults to 60 seconds
+    -- expire_time = 600;
+
+    -- set the realm
+    -- optional, defaults to 'default'
+    -- realm = 'default';
+
+    -- set the redis host
+    -- optional, defaults to 127.0.0.1
+    -- redis_host = "127.0.0.1";
+
+    -- set the redis port
+    -- optional, defaults to 6379
+
+    -- set the redis prefix
+    -- optional, defaults to "redis-auth/"
+    -- redis_host = "redis-auth/";
+
+}
+
+return config;
